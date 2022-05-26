@@ -15,7 +15,7 @@ class kalkulator extends Model
         $date="2010-11-19";
         $date1=strtotime($date);
         $date2=strtotime($dates);
-        $pasar=(($date2-$date1)/86400)%5;
+        $pasar=(abs($date2-$date1)/86400)%5;
         $hari=date_format(date_create($dates),'l');
         $hariint=date_format(date_create($dates),'d');
         $bulan=date_format(date_create($dates),'F');

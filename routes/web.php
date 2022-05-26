@@ -18,7 +18,3 @@ Route::get('/', function () {
 })->name('welcome');
 
 Route::post('kalkulator',[\App\Http\Controllers\kalkulatorController::class,'kalkulator'])->name('kalkulator');
-
-Route::get('result',function (){
-    return view('result');
-})->name('result');
