@@ -15,4 +15,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('welcome');
+
+Route::post('kalkulator',[\App\Http\Controllers\kalkulatorController::class,'kalkulator'])->name('kalkulator');
+
+Route::get('result',function (){
+    return view('result');
+})->name('result');
