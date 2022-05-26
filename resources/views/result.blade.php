@@ -30,11 +30,11 @@
     </tr>
     <tr>
         <th>Nama</th>
-        <td>{{$hasil['nama']}}</td>
+        <td id="nama">{{$hasil['nama']}}</td>
     </tr>
     <tr>
         <th>Meninggal</th>
-        <td>{{$hasil['tanggal']}}</td>
+        <td id="tanggal">{{$hasil['tanggal']}}</td>
     </tr>
     <tr>
         <th>3 Hari</th>
