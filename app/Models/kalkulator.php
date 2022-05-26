@@ -79,7 +79,7 @@ class kalkulator extends Model
     public function Tanggal100Hari(string $date): string
     {
         $dates=date_create($date);
-        date_add($dates,date_interval_create_from_date_string("3 Months 10 Days"));
+        date_add($dates,date_interval_create_from_date_string("3 Months 9 Days"));
         $date=date_format($dates,"Y-m-d");
         $hari=$this->Tanggal($date);
         return $hari;
